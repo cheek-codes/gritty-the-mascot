@@ -1,0 +1,17 @@
+img{
+    width: 100%;
+}
+
+p{
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    font-size: 2rem;
+}
+
+a{
+    position: absolute;
+    top: 20%;
+    right: 10%;
+    font-size: 2rem;
+}
