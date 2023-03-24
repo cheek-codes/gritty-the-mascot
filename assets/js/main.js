@@ -7,7 +7,7 @@ function changeImage() {
   
     if (img.src.indexOf(defaultImage) !== -1) {
       // If the image is the default image, change to a random image
-      var randomIndex = Math.floor(Math.random() * images.length);
+      var randomIndex = Math.ceil(Math.random() * images.length);
       img.src = images[randomIndex];
       setTimeout(function() {
         img.src = defaultImage; // Set the source of the image back to the default image after 2 seconds
@@ -18,5 +18,4 @@ function changeImage() {
     }
   }
   
-setInterval(changeImage, 6700); // Call the changeImage function every 5 seconds
-  
+setInterval(changeImage, Math.random() * 50000); // Call the changeImage function every 5 seconds

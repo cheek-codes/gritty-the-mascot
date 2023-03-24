@@ -9,9 +9,21 @@ p{
     font-size: 2rem;
 }
 
-a{
+.clicks{
     position: absolute;
     top: 20%;
     right: 10%;
     font-size: 2rem;
+}
+
+.no{
+    position: absolute;
+    top: 90%;
+    right: 700%;
+    font-size: .5rem;
+}
+
+p{
+    font-size: 6rem;
+    border: solid 3px red;
 }
