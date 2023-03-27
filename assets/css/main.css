@@ -22,3 +22,18 @@ p{
     right: 700%;
     font-size: .5rem;
 }
+
+#no {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  cursor: pointer;
+}
+
+#nein {
+    position: relative;
+    width: 1400px;
+    height: 750px;
+    border: 1px solid black;
+}
