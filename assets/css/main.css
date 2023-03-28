@@ -37,3 +37,7 @@ p{
     height: 750px;
     border: 1px solid black;
 }
+
+.hidden{
+    display: none;
+}
