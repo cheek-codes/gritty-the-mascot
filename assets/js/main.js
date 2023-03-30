@@ -4,8 +4,6 @@ const jail = document.querySelector("#jail")
 const wendys = document.querySelector("#wendys")
 const ramen = document.querySelector("#ramen")
 const noods = document.querySelector("#noods")
-const text = document.querySelector(".noodz")
-const newText = ["JK. Here's some noods", "Do you really want noods", "Sorry, here's actual noods."]
 let index = 0
 let count = 0
 
@@ -27,25 +25,46 @@ function move() {
 
 
 // toggle images
-document.querySelector(".noodz").addEventListener("click", next1)
-document.querySelector(".noodz").addEventListener("click", next2)
-document.querySelector(".noodz").addEventListener("click", next3)
-document.querySelector(".noodz").addEventListener("click", next4)
+document.querySelector(".yes").addEventListener("click", yes)
+document.querySelector(".dad").addEventListener("click", dad)
+document.querySelector(".bowl").addEventListener("click", bowl)
+document.querySelector(".nah").addEventListener("click", nah)
 
-function next1(){
+function yes(){
     jail.classList.toggle("hidden")
     wendys.classList.add("hidden")
     ramen.classList.add("hidden")
     noods.classList.add("hidden")
 }
 
+function dad(){
+    jail.classList.add("hidden")
+    wendys.classList.toggle("hidden")
+    ramen.classList.add("hidden")
+    noods.classList.add("hidden")
+}
+
+function bowl(){
+    jail.classList.add("hidden")
+    wendys.classList.add("hidden")
+    ramen.classList.toggle("hidden")
+    noods.classList.add("hidden")
+}
+
+function nah(){
+    jail.classList.add("hidden")
+    wendys.classList.add("hidden")
+    ramen.classList.add("hidden")
+    noods.classList.toggle("hidden")
+}
+
 // text change
-text.addEventListener("click", function() {
-    if (index < newText.length) {
-        text.textContent = newText[index]
-        index++
-    } 
-    else {
-        index = 0
-    }
-})
+// text.addEventListener("click", function() {
+//     if (index < newText.length) {
+//         text.textContent = newText[index]
+//         index++
+//     } 
+//     else {
+//         index = 0
+//     }
+// })
