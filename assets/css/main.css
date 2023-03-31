@@ -91,3 +91,9 @@ footer .foot{
 video{
     width: 50%;
 }
+
+.found {
+    display: flex;
+    justify-content: space-evenly;
+    border: 2px solid red;
+}
