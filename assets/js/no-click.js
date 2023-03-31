@@ -6,7 +6,6 @@ const newText = ["Why you clicked again?", "STHAP!", "DON'T DO IT AGAIN!!!", "Qu
 let index = 0
 let count = 0
 
-// element moves
 link.addEventListener('click', moveElements)
 moveElements()
 
@@ -22,7 +21,6 @@ function moveElements() {
     changeElement()
 }
 
-// text change
 link.addEventListener("click", function() {
     if (index < newText.length) {
         texts.textContent = newText[index]
@@ -33,7 +31,6 @@ link.addEventListener("click", function() {
     }
 })
 
-// change to a link
 function changeElement() {
     count++
     if (count === 6) {

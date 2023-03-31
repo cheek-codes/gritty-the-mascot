@@ -8,7 +8,6 @@ let index = 0
 let count = 0
 
 
-// element moves
 document.addEventListener("DOMContentLoaded", move);
 
 function move() {
@@ -23,8 +22,6 @@ function move() {
     })
 }
 
-
-// toggle images
 document.querySelector(".yes").addEventListener("click", yes)
 document.querySelector(".dad").addEventListener("click", dad)
 document.querySelector(".bowl").addEventListener("click", bowl)
@@ -57,14 +54,3 @@ function nah(){
     ramen.classList.add("hidden")
     noods.classList.toggle("hidden")
 }
-
-// text change
-// text.addEventListener("click", function() {
-//     if (index < newText.length) {
-//         text.textContent = newText[index]
-//         index++
-//     } 
-//     else {
-//         index = 0
-//     }
-// })
